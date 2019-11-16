@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    /*font-family: montserrat;*/
+    box-sizing: border-box;
+    /*background: rgba(1, 81, 137, 0.9)*/
+}
+.login-form{
+    color: rgba(49,175,145,0.99);
+    width: 25%;
+    position: fixed;
+    background: #f1f1f1;
+    height: 70%;
+    padding: 80px 40px;
+    border-radius: 10px;    
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background: rgba(224,255,138,1);
+    background: -moz-linear-gradient(left, rgba(224,255,138,1) 0%, rgba(224,255,138,0.67) 0%, rgba(171,237,110,0.67) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(224,255,138,1)), color-stop(0%, rgba(224,255,138,0.67)), color-stop(100%, rgba(171,237,110,0.67)));
+    background: -webkit-linear-gradient(left, rgba(224,255,138,1) 0%, rgba(224,255,138,0.67) 0%, rgba(171,237,110,0.67) 100%);
+    background: -o-linear-gradient(left, rgba(224,255,138,1) 0%, rgba(224,255,138,0.67) 0%, rgba(171,237,110,0.67) 100%);
+    background: -ms-linear-gradient(left, rgba(224,255,138,1) 0%, rgba(224,255,138,0.67) 0%, rgba(171,237,110,0.67) 100%);
+    background: linear-gradient(to right, rgba(224,255,138,1) 0%, rgba(224,255,138,0.67) 0%, rgba(171,237,110,0.67) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0ff8a', endColorstr='#abed6e', GradientType=1 );
+}
+.login-form:hover{
+    
+    transition: 1s;
+}
+.login-form h1{
+    text-align: center;
+    margin-bottom: 20%;
+}
+.login-form img{
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+.txtb{
+    border-bottom: 2px solid #adadad;
+    position: relative;
+    margin: 30px 0;
+    /*background: red;*/
+}
+.txtb input{
+    font-size:15px;
+    color: #333;
+    border: none;
+    width: 100%;
+    outline: none;
+    background: none;
+    padding: 0 5px;
+    height: 40px;
+}
+.txtb span::before{
+    content: attr(data-placeholder);
+    position: absolute;
+    top:50%;
+    left:5px;
+    color:#adadad;
+    transform: translateY(-50%);
+    z-index: -1;
+    transition: .5s;
+}
+.txtdb span::after{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: green;
+    transition: .5s;
+}
+.focus + span::before{
+    top: -5px;
+}
+.focus + span::after{
+    width: 100%;
+}
+.logbtn{
+    display: block;
+    width: 100%;
+    height: 50px;
+    border: none;
+    background-size: 200%;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    transition: .5s;
+}
+.logbtn:hover{
+    background-position: right;       
+}
+@media (min-width: 400px) {
+    
+}
