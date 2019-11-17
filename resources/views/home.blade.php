@@ -88,9 +88,9 @@
 
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
-                                    <a href="./index.html" class="nav-link active">
+                                    <a href="form_user_register" class="nav-link active send_form">
                                         <i class="far fa-circle nav-icon"></i>
-                                        <p>Dashboard v1</p>
+                                        <p>Registrar Usuarios</p>
                                     </a>
                                 </li>
                                 <li class="nav-item">
@@ -207,7 +207,7 @@
             </div>
         </aside>
         <div class="content-wrapper">     
-            <div class="container">
+            <div id="contentGlobal">
                 
             </div>
         </div>

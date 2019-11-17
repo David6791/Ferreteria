@@ -18,3 +18,7 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+
+Route::get('/form_user_register', 'PeopleController@form_register');
+Route::post('/save_dates_users', 'PeopleController@save_dates_user');
